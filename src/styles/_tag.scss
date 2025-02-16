@@ -1,0 +1,23 @@
+.tag-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    
+    .tag-container {
+        padding: 8px 12px;
+        border-radius: 8px;
+        background: #2d2d2d;
+        cursor: pointer;
+
+        &:hover {
+            background: #3d3d3d;
+        }
+
+        p {
+            color: #f1f1f1;
+            font-weight: 500;
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.home-page {
+    position: relative;
+    top: 56px;
+    left: 80px;
+    width: calc(100vw - 80px);
+    height: calc(100vh - 56px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+}

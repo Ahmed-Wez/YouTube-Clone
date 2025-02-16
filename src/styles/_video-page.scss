@@ -1,0 +1,175 @@
+.video-page {
+    position: relative;
+    top: 56px;
+    width: 100vw;
+    min-height: calc(100vh - 56px);
+    padding: 20px;
+
+    .left-side-container {
+        width: 70%;
+
+        .video-container {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 24px;
+            
+            iframe {
+                border-radius: 10px;
+            }
+        }
+
+        .video-info-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 8px;
+
+            .video-title-container {
+                .video-title {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+
+            .channel-like-dislike-share-download-more-container {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row;
+
+                .channel-container {
+                    display: flex;
+                    align-items: space-between;
+                    justify-content: center;
+                    flex-direction: row;
+                    gap: 12px;
+
+                    .channel-image-container {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 500px;
+                        cursor: pointer;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .channel-name-subscribers-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 4px;
+                        margin-right: 24px;
+
+                        .channel-name-container {
+                            cursor: pointer;
+                            p {
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .channel-subscribers-container {
+                            p {
+                                font-size: 12px;
+                                color: #aaa;
+                            }
+                        }
+                    }
+
+                    .channel-join-subscribe-btns-container {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 8px;
+                       
+                        div {
+                            button {
+                                background: #0e0e0e;
+                                font-size: 15px;
+                                font-weight: 500;
+                                padding: 8px 16px;
+                                border-radius: 20px;
+                                border: 1px solid #404040;
+                                cursor: pointer;
+
+                                &:hover {
+                                    background: #404040;
+                                }
+                            }
+
+                            &.channel-subscribe-container {
+                                button {
+                                    background: #f1f1f1;
+                                    color: #0e0e0e;
+
+                                    &:hover {
+                                        background: hsl(0, 0%, 80%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .like-dislike-share-download-more-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+
+                    .like-dislike-container {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        overflow: hidden;
+                        border-radius: 40px;
+                        background: #2e2e2e;
+
+                        .like-container {
+                            gap: 8px;
+
+                            .icon {
+                                transform: rotateX(180deg) rotateY(180deg);
+                            }
+                        }
+
+                        .separator {
+                            height: 20px;
+                            width: 1px;
+                            background: #aaa;
+                        }
+                    }
+
+                    .like-dislike--share-download-container {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 8px;
+                        height: 36px;
+                        padding: 16px;
+                        background: #2e2e2e;
+                        cursor: pointer;
+
+                        &.share-container, &.download-container {
+                            border-radius: 40px;
+                        }
+
+                        p {
+                            font-weight: 500;
+                            font-size: 14px;
+                        }
+
+                        &:hover {
+                            background: #404040;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

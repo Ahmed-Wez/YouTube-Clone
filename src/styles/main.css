@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("./_header.scss");
+@import url("./_video.scss");
+@import url("./_tag.scss");
+@import url("./_menu.scss");
+@import url("./_home-page.scss");
+@import url("./_video-page.scss");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  color: #f1f1f1;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #0e0e0e;
+}
+body .app {
+  display: flex;
+}
+body .app.menu-active .home-page {
+  width: calc(100vw - 240px);
+  left: 240px;
+}
+body .app.menu-active .home-page .video-container {
+  width: calc((100% - 80px) / 3);
+}/*# sourceMappingURL=main.css.map */
